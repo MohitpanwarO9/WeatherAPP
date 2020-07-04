@@ -4,7 +4,8 @@ import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import java.net.HttpURLConnection
+import kotlinx.android.synthetic.main.activity_main.view.*
+
 import java.net.URL
 import kotlinx.android.synthetic.main.activity_report.*
 import org.json.JSONObject
@@ -81,6 +82,8 @@ class Report : AppCompatActivity() {
             }catch (e:Exception){
                 loader.visibility=View.GONE
                 errorText.visibility=View.VISIBLE
+                errorlink.visibility=View.VISIBLE
+
             }
 
 

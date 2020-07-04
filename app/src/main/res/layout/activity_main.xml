@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/etcityName"
+    <AutoCompleteTextView
+        android:id="@+id/AtcityName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="252dp"
@@ -28,11 +28,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etcityName"
+        app:layout_constraintTop_toBottomOf="@+id/AtcityName"
         app:layout_constraintVertical_bias="0.158" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
@@ -40,7 +40,7 @@
 
         android:textColor="#000000"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/etcityName"
+        app:layout_constraintBottom_toTopOf="@+id/AtcityName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,11 +52,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/etcityName"
+        app:layout_constraintBottom_toTopOf="@+id/AtcityName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.288"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/sun" />
 

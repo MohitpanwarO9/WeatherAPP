@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">Weather</string>
+
+    <string-array name="citys">
+        <item>Faridabad</item>
+        <item>Gurugram</item>
+        <item>Panipat</item>
+        <item>Ambala</item>
+        <item>Yamunanagar</item>
+        <item>Rohtak</item>
+        <item>Hisar</item>
+        <item>Karnal</item>
+        <item>Sonipat</item>
+        <item>Panchkula</item>
+        <item>Bhiwani</item>
+        <item>Sirsa</item>
+        <item>Bahadurgarh</item>
+        <item>Jind</item>
+        <item>Thanesar</item>
+        <item>Kaithal</item>
+        <item>Rewari</item>
+        <item>Palwal</item>
+        <item>Pundri</item>
+        <item>Kosli</item>
+        <item>New York</item>
+        <item>Paris</item>
+        <item>Tokyo</item>
+        <item>Moscow</item>
+        <item>Dubai</item>
+        <item>Singapore</item>
+        <item>Barcelona</item>
+        <item>Delhi</item>
+        <item>Muğla</item>
+        <item>Buenos Aires</item>
+        <item>Chiba</item>
+        <item>Frankfurt</item>
+        <item>Stockholm</item>
+
+    </string-array>
 </resources>
