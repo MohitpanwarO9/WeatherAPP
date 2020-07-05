@@ -65,9 +65,9 @@ class Report : AppCompatActivity() {
                 val tem=main.getString("temp")+"°C"
                 val temin="Min Temp "+main.getString("temp_min") +"°C"
                 val temax="Max Temp "+main.getString("temp_max")+ "°C"
-                val pre=main.getString("pressure")
-                val humid=main.getString("humidity")
-                val win=wind1.getString("speed")
+                val pre=main.getString("pressure") + " hpa"
+                val humid=main.getString("humidity") + "%"
+                val win=wind1.getString("speed") + "m/s"
                 val sunri=sys.getLong("sunrise")
                 val sunse=sys.getLong("sunset")
                 val name=jsonObj.getString("name")+","+sys.getString("country")

@@ -5,6 +5,7 @@ import android.os.Build
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
@@ -13,13 +14,15 @@ import android.widget.AutoCompleteTextView
 import androidx.annotation.RequiresApi
 
 import kotlinx.android.synthetic.main.activity_main.*
+import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
 
-    @RequiresApi(Build.VERSION_CODES.O)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -54,9 +57,17 @@ class MainActivity : AppCompatActivity() {
 
         //time comparision code//
 
-        val current = LocalDateTime.now()
-        val formatter = DateTimeFormatter.ofPattern("HH")
-        val formatted = current.format(formatter)
+        val formatted:String
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            var current = LocalDateTime.now()
+            val formatter = DateTimeFormatter.ofPattern("HH")
+                formatted = current.format(formatter)
+        } else {
+            var current = Date()
+            val formatter = SimpleDateFormat("HH")
+                formatted = formatter.format(current)
+        }
 
         if(formatted.toInt()>=20 || formatted.toInt()<=6){
             imageView.setImageResource(R.drawable.moon)
