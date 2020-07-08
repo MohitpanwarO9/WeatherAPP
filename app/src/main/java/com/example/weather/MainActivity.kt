@@ -2,17 +2,14 @@ package com.example.weather
 
 import android.content.Intent
 import android.os.Build
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.view.inputmethod.EditorInfo
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
-import androidx.annotation.RequiresApi
-
+import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
@@ -69,7 +66,7 @@ class MainActivity : AppCompatActivity() {
                 formatted = formatter.format(current)
         }
 
-        if(formatted.toInt()>=20 || formatted.toInt()<=6){
+        if(formatted.toInt()>=20 || formatted.toInt()<6){
             imageView.setImageResource(R.drawable.moon)
 
             //starting animation
@@ -85,6 +82,19 @@ class MainActivity : AppCompatActivity() {
         }
 
         // get weather button and intent //
+        AtcityName.setOnEditorActionListener { _, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+                // Do what you want here
+                val cityname:String=AtcityName.text.toString()
+
+                val intent:Intent=Intent(applicationContext,Report::class.java)
+                intent.putExtra("city",cityname)
+
+                startActivity(intent)
+                return@setOnEditorActionListener true
+            }
+            return@setOnEditorActionListener false
+        }
 
         searchBT.setOnClickListener {
 
