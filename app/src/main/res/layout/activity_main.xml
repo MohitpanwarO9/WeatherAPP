@@ -43,7 +43,7 @@
 
         android:text="Get Weather information  of your city"
         android:textColor="#000000"
-        android:textSize="21sp"
+        android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/AtcityName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,13 +135,15 @@
         app:srcCompat="@drawable/cloud" />
 
     <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="425dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="4dp"
+        android:id="@+id/imageView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBT"
+        app:layout_constraintVertical_bias="0.782"
         app:srcCompat="@drawable/grass" />
 
 

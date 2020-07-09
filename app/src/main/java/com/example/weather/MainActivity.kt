@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
 
         val Cloud1=AnimationUtils.loadAnimation(this,R.anim.cloud1)
         val Cloud2=AnimationUtils.loadAnimation(this,R.anim.cloud2)
-        cloud2.startAnimation(Cloud2)
+
 
         val star1=AnimationUtils.loadAnimation(this,R.anim.fade1)
         val star2=AnimationUtils.loadAnimation(this,R.anim.fade2)
@@ -87,6 +87,7 @@ class MainActivity : AppCompatActivity() {
 
 
             cloud1.startAnimation(Cloud1)
+            cloud2.startAnimation(Cloud2)
 
         }
 
