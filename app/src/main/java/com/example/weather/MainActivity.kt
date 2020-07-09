@@ -38,6 +38,10 @@ class MainActivity : AppCompatActivity() {
         val animSlidebut=AnimationUtils.loadAnimation(this,R.anim.slidbut)
         searchBT.startAnimation(animSlidebut)
 
+        val Cloud1=AnimationUtils.loadAnimation(this,R.anim.cloud1)
+        val Cloud2=AnimationUtils.loadAnimation(this,R.anim.cloud2)
+        cloud2.startAnimation(Cloud2)
+
         val star1=AnimationUtils.loadAnimation(this,R.anim.fade1)
         val star2=AnimationUtils.loadAnimation(this,R.anim.fade2)
         val star3=AnimationUtils.loadAnimation(this,R.anim.fade3)
@@ -64,6 +68,7 @@ class MainActivity : AppCompatActivity() {
             var current = Date()
             val formatter = SimpleDateFormat("HH")
                 formatted = formatter.format(current)
+
         }
 
         if(formatted.toInt()>=20 || formatted.toInt()<6){
@@ -79,6 +84,10 @@ class MainActivity : AppCompatActivity() {
             smallstar.visibility=View.GONE
             smallstar2.visibility=View.GONE
             bigstar.visibility=View.GONE
+
+
+            cloud1.startAnimation(Cloud1)
+
         }
 
         // get weather button and intent //

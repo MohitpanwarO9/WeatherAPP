@@ -24,6 +24,12 @@ class Report : AppCompatActivity() {
 
        getWeather().execute()
 
+        aboutdev.setOnClickListener {
+            val about=About()
+            val aboutfr=supportFragmentManager
+            about.show(aboutfr,"about_me")
+        }
+
     }
 
 
