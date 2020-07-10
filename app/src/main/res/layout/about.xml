@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="I'm competitive programmer ,Android App developer and have successfully contributed to coding blocks online app"
+            android:text="I'm competitive programmer ,Android App developer and successfully contributed to coding blocks online app. In free time i love do video editing"
             android:textSize="18dp"
             android:textStyle="italic" />
 

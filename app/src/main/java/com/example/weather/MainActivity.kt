@@ -78,6 +78,9 @@ class MainActivity : AppCompatActivity() {
             smallstar.startAnimation(star1)
             smallstar2.startAnimation(star3)
             bigstar.startAnimation(star2)
+
+            cloud1.visibility=View.GONE
+            cloud2.visibility=View.GONE
         }
         else
         {
